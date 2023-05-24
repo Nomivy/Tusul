@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bf3ddbbd8a.js" crossorigin="anonymous"></script>
+    <title>EXO</title>
+</head>
+<body>
+    <header class="site-header sticky-top"> 
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav"> 
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo" src="logo.png" alt="Bootstrap" width="70" height="auto"></a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars ms-1"></i>
+            </button>  
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase py-2 py-lg-0">
+                <li class="nav-item">
+            <a class=" nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">   
+                    <a class="nav-link" aria-current="page" href="#">Discorgraphy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Connect</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Tour</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    </header>
+<div id="intro">
+    <div class="row text-center ehlel">
+        <h1>Albums</h1>
+        <div id="multiCard"></div>
+    </div>
+    
+    <script>
+        var myCard = [
+	            {
+	                "title": "2022 Winter SMTOWN SMCU PALACE",
+	                "image": "album_1.jpg",
+	                "parag": "Listing 10 Songs Created through Various Combinations of Top-tier Artists! Releasing on December 26th! "
+	            },
+	            {
+	                "title": "2021 Winter SMTOWN : SMCU EXPRESS",
+	                "image": "album_2.jpg",
+	                "parag": "10년 만에 선보이는 SMTOWN 겨울 앨범! 색다른 멤버 조합+다채로운 장르의 총 10곡 수록!"
+	            },
+	            {
+	                "title": "EXO Special Album 'DON'T FIGHT THE FEELING'",
+	                "image": "album_3.jpg",
+	                "parag": "EXO, Releasing Special Album, ‘DON’T FIGHT THE FEELING,’ on June 7th! Total 5 Songs Including the Single, ‘Don’t fight the feeling’!"
+	            },
+                {
+	                "title": "EXO The 6th Album 'OBSESSION'",
+	                "image": "album_4.jpg",
+	                "parag": "Return of ‘K-POP King’, EXO! Releasing the 6th Regular Album, ‘OBSESSION’, on November 27! 10 Songs in Various Genres including Title Song, ‘Obsession’!"
+	            },
+                {
+	                "title": "EXO The 5th Album Repackage 'LOVE SHOT'",
+	                "image": "album_5.jpg",
+	                "parag": "‘K-POP King’, EXO (SM Entertainment), is continuing to win popularity with the release of the repacked fifth regular album, 'LOVE SHOT', on December 13."
+	            },
+                {
+	                "title": "EXO The 5th Album ‘DON’T MESS UP MY TEMPO’",
+	                "image": "album_6.jpg",
+	                "parag": "Releasing the 5th Regular Album, ‘DON’T MESS UP MY TEMPO’, on November 2nd! 11 Songs of Various Genres including the Title Song, ‘Tempo’!"
+	            },
+                {
+	                "title": "Universe - 겨울 스페셜 앨범, 2017",
+	                "image": "album_7.jpg",
+	                "parag": "‘K-POP 끝판왕’ EXO가 올해도 어김없이 겨울 스페셜 앨범 ‘Universe’를 발표한다."
+	            },
+                {
+	                "title": "Power (Remixes)",
+	                "image": "album_8.jpg",
+	                "parag": "29th SM ‘STATION’ 시즌 2, 'EXO' [Power] 리믹스!! 네 가지 버전으로 만나는 'EXO'의 'Power', 이보다 더 신날 순 없다!"
+	            },
+                {
+	                "title": "‘THE WAR: The Power of Music’",
+	                "image": "album_9.jpg",
+	                "parag": "‘Quadruple Million-Seller’, EXO, Releases Repackaged 4th Album on September 5th!"
+	            },
+                {
+	                "title": "EXO the 4th album ‘THE WAR’",
+	                "image": "album_10.jpg",
+	                "parag": "‘Return of the Kings’, World’s Hottest Group, EXO, makes their comeback! All Songs from of their 4th Album ‘THE WAR’, releases on July 18th!"
+	            },
+                {
+	                "title": "EXO 2016 겨울 스페셜 앨범 ‘For Life’",
+	                "image": "album_11.jpg",
+	                "parag": "EXO is Releasing ’Winter Song that You Should Not Miss’ this End of the Year! Unrivaled Group EXO Releases ‘For Life’ – Winter Special Album, 2016 on December 19th !"
+	            },
+                {
+	                "title": "Dancing King",
+	                "image": "album_12.jpg",
+	                "parag": "10년 만에 선보이는 SMTOWN 겨울 앨범! 색다른 멤버 조합+다채로운 장르의 총 10곡 수록!"
+	            },
+                {
+	                "title": "EXO 정규 3집 리패키지 앨범 LOTTO",
+	                "image": "album_13.jpg",
+	                "parag": "Hot Global Group, EXO, to Release ‘LOTTO’, Repackaged Version of Third Regular Album, on August 18!"
+	            },
+                {
+	                "title": "EXO 정규 3집 앨범 EX’ACT",
+	                "image": "album_14.jpg",
+	                "parag": "Top Global Artist, EXO, Ready to Make Splendid Comeback and Sweep Charts! Releasing Third Regular Album, EX’ACT, on June 9th!"
+	            },
+                {
+	                "title": "EXO 겨울 스페셜 앨범 ‘Sing For You’",
+	                "image": "album_15.jpg",
+	                "parag": "Hottest Global Group, EXO, Returns This Winter! Releasing Winter Special Album, ‘Sing For You’, on December 10!"
+	            },
+                {
+	                "title": "EXO The 2nd REPACKAGE Album [LOVE ME RIGHT]",
+	                "image": "album_16.jpg",
+	                "parag": "EXO Releases The Second Regular Album Repackage, ‘LOVE ME RIGHT’, on June 3!"
+	            },
+                {
+	                "title": "EXO The 2nd Album “EXODUS”",
+	                "image": "album_17.jpg",
+	                "parag": "EXO’s Second Full-length Album ‘EXODUS’ Releases on March 30!"
+	            },
+                {
+	                "title": "EXOLOGY CHAPTER 1: THE LOST PLANET",
+	                "image": "album_18.jpg",
+	                "parag": "EXO, 첫 단독 콘서트 실황 앨범 발매! 새롭게 선보이는 겨울 시즌송 ‘December, 2014’도 특별 수록!"
+	            },
+                {
+	                "title": "The 2nd Mini Album “중독(Overdose)”",
+	                "image": "album_19.jpg",
+	                "parag": "EXO’s 2nd Mini Album ‘Overdose’ Launches! Set to Take Music Industry by Storm with Fatal Attractions!"
+	            },
+                {
+	                "title": "EXO 겨울 스페셜 앨범“12월의 기적(Miracles in December)”",
+	                "image": "album_20.jpg",
+	                "parag": "EXO to Release Winter Special Album “Miracles in December” on December 9th!"
+	            },
+
+                {
+	                "title": "EXO The 1st Album ‘XOXO(Kiss&Hug)’Repackage",
+	                "image": "album_22.jpg",
+	                "parag": "First Full-length Repackaged Album on Sale on August 5! Three New Tracks Included!"
+	            },
+                {
+	                "title": "2021 Winter SMTOWN : SMCU EXPRESS",
+	                "image": "album_23.jpg",
+	                "parag": "10년 만에 선보이는 SMTOWN 겨울 앨범! 색다른 멤버 조합+다채로운 장르의 총 10곡 수록!"
+	            },
+                {
+	                "title": "MAMA(Chinese Ver)",
+	                "image": "album_24.jpg",
+	                "parag": "EXO-K and EXO-M, are releasing the first mini album, ‘MAMA’, on the 9th."
+	            },
+                {
+	                "title": "MAMA",
+	                "image": "album_25.jpg",
+	                "parag": "EXO-K and EXO-M, are releasing the first mini album, ‘MAMA’, on the 9th."
+	            },
+	        ]
+            multiDynamicCard();
+
+		    function multiDynamicCard(){
+
+		    	for(i=0; i<myCard.length; i++){
+
+		    		//Creating html div and adding class to it
+				    var card = document.createElement("div");
+				    card.classList.add("card");
+				    card.style.width = '16.5rem';
+
+				    //Creating img tag
+				    var img = document.createElement("img");
+				    img.src = myCard[i].image;
+				    img.classList.add('card-img-top');
+				    card.appendChild(img);
+
+				    //Creating div card-body
+				    var cardBody = document.createElement("div");
+				    cardBody.classList.add("card-body");
+				    card.appendChild(cardBody);
+
+				    //Creating h5 card-title
+				    var cardTitle = document.createElement("h5");
+				    cardTitle.classList.add("card-title");
+				    cardTitle.innerHTML = myCard[i].title;
+				    cardBody.appendChild(cardTitle);
+
+				    //Creating p card-text
+				    var cardText = document.createElement("p");
+				    cardText.classList.add("card-text");
+                    cardText.style.fontSize='15px';
+				    cardText.innerHTML = myCard[i].parag;
+				    cardBody.appendChild(cardText);
+
+				    var multiCard = document.getElementById("multiCard");
+			        multiCard.appendChild(card);
+
+		    	}
+		    }
+    </script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add('bg-dark', 'shadow');
+      } else {
+        nav.classList.remove('bg-dark', 'shadow');
+      }
+    });
+</script>
+</body>
+</html>
